@@ -2,7 +2,7 @@
 
 main()
 {
-	float pesoidealh, pesoidealm, altura;
+	float pesoidealh, pesoidealm, altura, pesoideal;
 	char sexo;
 	
 	printf("Insira seu sexo (m ou h): ");
@@ -12,16 +12,20 @@ main()
 	scanf("%f" ,&altura);
 	
 	
- if (sexo == 'h') 
+ if (sexo == 'h' || sexo == 'H') 
  {
-        pesoidealh = 72.7 * altura - 58;
-        printf("\nO peso ideal para um homem: %.2f", altura, pesoidealh);
+        pesoideal = 72.7 * altura - 58;
+        printf("\nO peso ideal: %.2f", pesoideal);
     }
 	
+	else if(sexo == 'm' || sexo == 'M')
+	{
+		pesoideal = (62.1 * altura) - 44,7;
+		printf("\nO peso ideal: %.2f",pesoideal);
+	}
 	else
 	{
-		pesoidealm = (62.1 * altura) - 44,7;
-		printf("\nSeu peso ideal: %.2f",pesoidealm);
+		printf("\nOpcao invalida.");
 	}
 }
 	
