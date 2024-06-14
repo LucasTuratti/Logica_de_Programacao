@@ -9,13 +9,13 @@ int main()
     
     for (int i = 0; i < 5; i++) 
 	{
-        printf("\nDigite os valores do vetor B:\n");
+        printf("\nDigite os valores do vetor A:");
         scanf("%d", &vetorA[i]);
     }
 
     for (int i = 0; i < 5; i++) 
 	{
-        printf(printf("\nDigite os valores do vetor B:\n"););
+        printf("\nDigite os valores do vetor B:");
         scanf("%d", &vetorB[i]);
     }
 
